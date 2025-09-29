@@ -1,16 +1,16 @@
-let salario = 1000;
-let anoContratacao = 1995;
-let anoAtual = new Date().getFullYear();
-let percentual = 0.0015;
+
+let entrada = prompt("Informe o salário inicial do funcionário (deixe em branco para usar R$ 1000,00):");
 
 
-salario += salario * percentual;
+let salarioInicial = entrada ? parseFloat(entrada) : 1000;
+
+let salario = salarioInicial;
+let percentual = 0.0015; 
 
 
-for (let ano = 1997; ano <= anoAtual; ano++) {
-    percentual *= 2;
+for (let ano = 1996; ano <= 2025; ano++) {
     salario += salario * percentual;
+    percentual *= 2; 
 }
 
-alert(`O salário atual do funcionário em ${anoAtual} é R$ ${salario.toFixed(2).replace('.', ',')}`);
-
+console.log("Salário em 2025: R$ " + salario.toFixed(2));
