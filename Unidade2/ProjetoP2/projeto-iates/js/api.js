@@ -76,22 +76,4 @@
         return retorno;
     }
 
-      $("#btnEntrar").on("click", function (event) {
-        event.preventDefault();
-
-        var email = $("#emailLogin").val();
-        var senha = $("#senhaLogin").val();
-
-        var objLoginSenha = {
-            email: email,
-            senha: senha
-        };
-
-        var valido = validarUsuario(objLoginSenha);
-
-        if (valido === true) {
-            window.location.href = "mensagens.html";
-        } else {
-            $("#erro").text("E-mail e senha inválidos").show();
-        }
-    });
+      

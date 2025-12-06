@@ -366,25 +366,51 @@ main h3 {
 
 /* mensagens */
 
- table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 25px;
-        }
+ .tablemsg {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffffcc;
+    overflow-x: auto;
+    display: block; 
+}
 
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
+.tablemsg th {
+    background: #003366;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
 
-        tr.nao-visualizada {
-            font-weight: bold;
-        }
+.tablemsg td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    word-break: break-word;
+}
 
-        button {
-            margin-right: 5px;
-        }
+.nao-visualizada td {
+    font-weight: bold;
+}
 
+/* ---------- BOTÕES ---------- */
+
+button {
+    padding: 7px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.btn-visu {
+    background: #0275d8;
+    color: white;
+}
+
+.btn-del {
+    background: #d9534f;
+    color: white;
+}
 
 /* footer */
 
